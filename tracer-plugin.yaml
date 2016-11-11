@@ -1,10 +1,9 @@
 data:
   components:
     rpms:
-      api: [bash]
+      api:
       dependencies: false
       packages:
-        bash: {rationale: A popular debugger.}
   dependencies:
     buildrequires: {tracer: 12-1}
   description: Module that depends on tracer module
@@ -13,11 +12,10 @@ data:
   name: tracer-plugin
   profiles:
     default:
-      rpms: [bash]
   references: {community: 'http://www.example.com/', documentation: 'http://www.example.com/',
     tracker: 'http://www.example.com/'}
   release: '1'
-  summary: A test module containing the bash shell
+  summary: A module with dependency on tracer module
   version: 1
 document: modulemd
 version: 0
