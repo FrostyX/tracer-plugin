@@ -1,0 +1,23 @@
+data:
+  components:
+    rpms:
+      api: [bash]
+      dependencies: false
+      packages:
+        bash: {rationale: A popular debugger.}
+  dependencies:
+    buildrequires: {tracer: 12-1}
+  description: Module that depends on tracer module
+  license:
+    module: [MIT]
+  name: tracer-plugin
+  profiles:
+    default:
+      rpms: [bash]
+  references: {community: 'http://www.example.com/', documentation: 'http://www.example.com/',
+    tracker: 'http://www.example.com/'}
+  release: '1'
+  summary: A test module containing the bash shell
+  version: 1
+document: modulemd
+version: 0
